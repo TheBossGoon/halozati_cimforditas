@@ -5,6 +5,7 @@ body {
   background-position-x: center;
   background-position-y: center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 #content {
@@ -40,7 +41,7 @@ h2 {
   font-style: italic;
 }
 
-p.imgtitle {
+p.imagetitle {
   font-size: 1.1em;
   margin: 0;
 }
@@ -63,11 +64,27 @@ p{
   font-style: italic;
   line-height: 130%;
   justify-content: center;
+  text-align: center;
 }
 
 th{
-  background-color: rgba(227, 225, 233, 0.8);
+  background-color: darkgreen;
   color: white;
+  padding: 15px;
+  border: 1px solid black;
+}
+td{
+  padding: 15px;
+  border: 1px solid black;
+  
+}
+table{
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(227, 225, 233, 0.8);
+  border-collapse:collapse ;
+  float: left;
+  margin-right: 20px;
 }
 
 a, a:hover, a:visited{

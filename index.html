@@ -9,11 +9,13 @@
 
 <body>
   <div id="content">
+    
     <h1>A hálózati címfordítás <a href="https://hu.wikipedia.org/wiki/Hálózati_címfordítás" target="_blank">*</a>
     </h1>
+    <div class="frame"><img src="ipv4fogyas.png" alt="IPcalypse" title="IPcalypse"><p class="imagetitle">Az IPv4 címek fogyása</p></div>
     <p>A hálózati címfordítás (angolul <b>Network Address Translation</b>, röviden <b>NAT</b>) a csomagszűrő tűzfalak, illetve a címfordításra képes hálózati eszközök (pl. router) kiegészítő szolgáltatása, mely lehetővé teszi a belső hálózatra kötött gépek közvetlen kommunikációját tetszőleges protokollokon keresztül külső gépekkel anélkül, hogy azoknak saját nyilvános IP-címmel kellene rendelkezniük. Címfordításra akár egyetlen számítógép is képes, így valósítható meg például az internet-kapcsolat megosztás is, amikor a megosztó gép a saját publikus címébe fordítja bele a megosztást kihasználó kliens gép forgalmát. </p>
     <p> Az egész címfordítás témaköre abból az igényből nőtte ki magát, hogy az IPv4 tartománya viszonylag kevés, 2<sup>32</sup>=256<sup>4</sup> , azaz 4 294 967 296 db egyedi IP címet tesz ki. Ebben persze benne van az összes broadcast cím és a külső hálózatra nem route-olható belső címtartományok is, tehát az interneten globálisan használható címek összessége így még kevesebb. A gépek hálózati kártyái egynél több címet is felvehetnek egyszerre ha kell, illetve nemcsak a számítógépeknek, hanem szinte az összes fontosabb hálózati eszköznek is szüksége van legalább egy címre. Belátható, hogy így a soknak tűnő 4 milliárd cím világviszonylatban már sajnos kevés.</p>
-    <div class="frame"><img src="ipv4fogyas.png" alt="IPcalypse" title="IPcalypse"><p class="imgtitle"></p>Az IPv4 címek fogyása</div>
+
     <h2>Működése</h2>
 
     <p>A hálózati címfordító a belső gépekről érkező csomagokat az internetre továbbítás előtt úgy módosítja, hogy azok feladójaként saját magát tünteti fel, így az azokra érkező válaszcsomagok is hozzá kerülnek majd továbbításra, amiket – a célállomás címének módosítása után – a belső hálózaton elhelyezkedő eredeti feladó részére ad át. Ebből kifolyólag ez minden esetben egy aktív hálózati eszközt igényel, amely folyamatosan figyeli az érkező csomagokat és azok feladói és címzettjei alapján elvégzi a szükséges módosításokat. Ez többnyire egy tűzfal, amely megfelelően szétválasztja a külső internetet a belső hálózattól. Innen származik a terminológia is: a külső, illetve belső hálózat fogalma. A belső hálózatnak olyan címtartományt kell adni, amelyet minden hálózati eszköz a nemzetközi szabványoknak megfelelően belsőnek ismer el, és így azokat nem irányítja közvetlenül a külső hálózat felé. A belső címeket az alábbi táblázat mutatja be:</p>
