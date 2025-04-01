@@ -69,3 +69,11 @@ th{
   background-color: rgba(227, 225, 233, 0.8);
   color: white;
 }
+
+a, a:hover, a:visited{
+  text-decoration: none;
+}
+
+a:hover{
+  color: yellow;
+}
