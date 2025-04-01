@@ -53,3 +53,13 @@ a:link,
 a:visited {
   color: blue;
 }
+
+p{
+  text-indent: 25px;
+  text-align: justify;
+}
+.imagetitle{
+  font-style: italic;
+  line-height: 130%;
+  justify-content: center;
+}
