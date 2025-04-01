@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-image: url(hatter.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -62,4 +63,9 @@ p{
   font-style: italic;
   line-height: 130%;
   justify-content: center;
+}
+
+th{
+  background-color: rgba(227, 225, 233, 0.8);
+  color: white;
 }
